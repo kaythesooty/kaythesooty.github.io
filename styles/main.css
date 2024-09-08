@@ -35,10 +35,11 @@ h3 {
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
-    padding: 4px 0px 2px 5px;
+    padding: 7px 0px 7px 5px;
     margin-right: 1vw;
     margin-left: 1vw;
     color: black;
+    height: 90px;
 }
 
 table {
@@ -54,6 +55,7 @@ p {
 h3 > p {
     font-size: 12pt;
     font-weight: normal;
+    margin-bottom: 0px;
 }
 
 .solidground {
@@ -83,6 +85,14 @@ main {
     margin-right: 25%;
 }
 
+.icon {
+    float: left;
+    width: 80px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
 @media screen and (max-width: 1500px) {
     .bordered {
         margin-left: 25px;
@@ -97,6 +107,11 @@ main {
 
     h3 {
         margin-right: 5px;
+        height: auto;
+    }
+
+    h3 > p {
+        clear: left;
     }
 }
 
