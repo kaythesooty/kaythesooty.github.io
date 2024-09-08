@@ -17,6 +17,7 @@ header {
     color: #85a6d0;
     padding: 12px;
     margin-top: 20px;
+    margin-bottom: 15px;
     top:0px;
 }
 
@@ -26,28 +27,37 @@ a {
 }
 
 li a{
+    float: left;
+    margin: 0;
     background-color: white;
-    border: solid black;
+    border: solid black 3px;
     border-radius: 10px;
-    margin: 0 1vw 0 1vw;
-    padding: 5px 10px 5px 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 30px auto 5px auto;
-    width: 70%;
-    padding: 0;
-    position: sticky;
-    top: 1px;
-}
-
-nav ul li {
-    display: inline;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    width: calc(31.33% - 6px);
+    height: 34px;
+    margin-left: 1%;
+    margin-right: 1%;
+    line-height: 36px;
 }
 
 li a:hover {
     background-color: gray;
+}
+
+nav {
+    position: sticky;
+    top: -8px;
+    height: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -91,7 +101,7 @@ h3 > p {
     background-color: #35291E;
     padding: 20px 25px 20px 25px;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     border-style: solid;
     border-width: 2px;
     border-color: black;
@@ -143,6 +153,15 @@ main {
     h3 > p {
         clear: left;
     }
+
+    nav {
+        width: 100%;
+    }
+
+    li a {
+        font-size: 2vw;
+    }
+
 }
 
 @media screen and (max-width: 790px) {
@@ -167,6 +186,13 @@ main {
 
     .solidground {
         padding: 0px 5px 0px 5px;
+    }
+
+    li a {
+        font-size: 2.5vw;
+        width: calc(33.33% - 6px);
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
