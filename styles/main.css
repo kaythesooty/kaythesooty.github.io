@@ -17,8 +17,37 @@ header {
     color: #85a6d0;
     padding: 12px;
     margin-top: 20px;
-    position: sticky; /*Sticky header because fuck you. jk I'll make it better sometime*/
     top:0px;
+}
+
+a {
+    color: black;
+    text-decoration-line: none;
+}
+
+li a{
+    background-color: white;
+    border: solid black;
+    border-radius: 10px;
+    margin: 0 1vw 0 1vw;
+    padding: 5px 10px 5px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 30px auto 5px auto;
+    width: 70%;
+    padding: 0;
+    position: sticky;
+    top: 1px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+li a:hover {
+    background-color: gray;
 }
 
 h2 {
@@ -91,6 +120,7 @@ main {
     border-style: solid;
     border-radius: 5px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1500px) {
