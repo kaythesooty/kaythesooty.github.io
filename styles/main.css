@@ -1,3 +1,7 @@
+/*:root {
+    font-size: 16pt;
+}*/
+
 body {
     background-color: #247545;
     color: white;
@@ -19,37 +23,42 @@ header {
     margin-top: 20px;
     margin-bottom: 15px;
     top:0px;
+    border: ridge #1A452C 5px;
 }
 
 a {
     color: black;
     text-decoration-line: none;
+    margin: 0;
 }
 
 li a{
     float: left;
     margin: 0;
-    background-color: white;
-    border: solid black 3px;
-    border-radius: 10px;
+    background-color: lightgrey;
+    border: outset grey 3px;
+/*     border-radius: 10px; */
     text-align: center;
-    font-size: 16pt;
+    font-size: 1.2em;
     font-weight: bold;
     width: calc(31.33% - 6px);
-    height: 34px;
+    height: auto;
     margin-left: 1%;
     margin-right: 1%;
-    line-height: 36px;
+    padding-top: .75%;
+    padding-bottom: .75%;
+/*     line-height: 36px; */
 }
 
 li a:hover {
-    background-color: gray;
+    background-color: white;
+    border-style: inset;
 }
 
 nav {
     position: sticky;
     top: -8px;
-    height: 20px;
+    height: 3vh;
     width: 70%;
     margin: auto;
 }
@@ -64,21 +73,36 @@ h2 {
     background-color: #5678FF;
     color: #FF9;
     padding: 15px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border-style: groove;
+    border-width: 4px;
+    border-color: #6688FF;
+/*     border-radius: 10px; */
 }
 
 h3 {
+    margin: 0;
+    padding: 0;
+}
+
+article {
     background-color: white;
     border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 7px 0px 7px 5px;
+    border-width: .2rem;
+    border-radius: .5rem;
+    padding: 1%;
     margin-right: 1vw;
     margin-left: 1vw;
+    margin-bottom: 25px;
     color: black;
-    height: 90px;
+    height: auto;
+    transition: 0.2s;
+}
+
+article:hover {
+    background-color: lightgray;
+    transition: 0.25s;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 table {
@@ -91,10 +115,11 @@ p {
     padding: 0px 10px 0px 10px;
 }
 
-h3 > p {
-    font-size: 12pt;
-    font-weight: normal;
+article p {
+    /*font-size: 12pt;
+    font-weight: normal;*/
     margin-bottom: 0px;
+    text-align: justify;
 }
 
 .solidground {
@@ -102,9 +127,9 @@ h3 > p {
     padding: 20px 25px 20px 25px;
     margin-bottom: 20px;
     margin-top: 30px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: #45392E;
 }
 
 main {
@@ -117,11 +142,9 @@ main {
 }
 
 .bordered {
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
     margin-left: 25%;
     margin-right: 25%;
+    border: outset darkgray 5px;
 }
 
 .icon {
@@ -130,7 +153,7 @@ main {
     border-style: solid;
     border-radius: 5px;
     margin-right: 10px;
-    margin-bottom: 10px;
+/*     margin-bottom: 20px; */
 }
 
 @media screen and (max-width: 1500px) {
